@@ -110,6 +110,7 @@ return array(
     'LaravelLang\\Lang\\' => array($vendorDir . '/laravel-lang/lang/src'),
     'Larastan\\Larastan\\' => array($vendorDir . '/larastan/larastan/src'),
     'L5Swagger\\' => array($vendorDir . '/darkaonline/l5-swagger/src'),
+    'KitLoong\\MigrationsGenerator\\' => array($vendorDir . '/kitloong/laravel-migrations-generator/src'),
     'Jenky\\Hades\\' => array($vendorDir . '/jenky/hades/src'),
     'Intervention\\Image\\' => array($vendorDir . '/intervention/image/src/Intervention/Image'),
     'Illuminate\\Support\\' => array($vendorDir . '/laravel/framework/src/Illuminate/Macroable', $vendorDir . '/laravel/framework/src/Illuminate/Collections', $vendorDir . '/laravel/framework/src/Illuminate/Conditionable'),

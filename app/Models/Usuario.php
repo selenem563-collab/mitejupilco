@@ -16,6 +16,8 @@ class Usuario extends Authenticatable
 {
     use HasApiTokens, HasFactory, Notifiable, SoftDeletes, HasRoles, AuthenticationLoggable;
 
+    protected $table = 'usuarios';
+
     /**
      * The attributes that are mass assignable.
      *
@@ -73,5 +75,10 @@ class Usuario extends Authenticatable
             $consulta->where('nombre', 'LIKE', "%$busqueda%")
                 ->orWhere('email', 'LIKE', "%$busqueda%");
         }
+    }
+
+    public function dispositivos()
+    {
+        return $this->hasMany(Dispositivo::class, 'usuario_id');
     }
 }
